@@ -1,0 +1,8 @@
+<div class="homeContainer homeContainer-header">
+    <app-button text="Orders" classVal="btn btn-prime btn-right" (btnClick)="toggleOrderArea('orders')"  ></app-button>
+    <app-button text="{{showCreateOrderForm?'Close':'Add New Order'}}"  
+    classVal="{{showCreateOrderForm?'btn btn-right btn-lg-close':'btn btn-right btn-lg'}}" 
+    (btnClick)="toggleOrderArea('add')" ></app-button>
+    <!-- <button type="button" class="btn btn-prime btn-right" >Add</button>     -->
+    <!-- <button type="button" class="btn btn-right" >Orders</button>     -->
+</div>

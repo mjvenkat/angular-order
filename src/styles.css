@@ -1,1 +1,395 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap";
+* {
+  box-sizing: border-box;
+}
+.col {
+  background-color: green;
+  border: 1px solid blue;
+}
+.menu {
+  float: left;
+  width: 10%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.h2 {
+  color: darkslategrey;
+}
+.right {
+  background-color: darkslategray;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.right.h2 {
+  color: floralwhite;
+}
+.right.p {
+  color: floralwhite;
+}
+
+.body-color {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.homeContainer {
+  max-width: 1000px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+.homeContainerArea {
+  max-width: 750px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: none;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.homeContainerArea-form {
+  max-width: 500px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: none;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.homeContainer-header {
+  min-height: 20px;
+  max-width: 1000px;
+  border: none;
+  padding: 5px;
+}
+
+.homeContainer-footer {
+  margin-top: 100px;
+  min-height: 20px;
+  max-width: 100%;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+.homecontainer-menu {
+  max-width: 500px;
+  margin: 30px auto;
+  background: ghostwhite;
+  color: #fff;
+  overflow: auto;
+  min-height: 10px;
+  border: 1px solid steelblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+.wrapper {
+  display: grid;
+}
+
+.btn {
+  background-color: green;
+  width: 150px;
+  position: relative;
+  display: inline-block;
+  color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-right {
+  float: right;
+}
+.btn-prime {
+  background-color: lightblue;
+}
+.btn-lg {
+  text-overflow: inherit;
+  white-space: nowrap;
+  width: 200px;
+}
+.btn-lg-close {
+  background-color: tomato;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+.form-control-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-select label {
+  flex: 1;
+}
+
+.form-control-select input {
+  flex: 2;
+  height: 20px;
+}
+
+.orderClass {
+  height: 250px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid lightgray;
+  margin: 10px;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.orderClass-details {
+  width: 50%;
+  float: left;
+  background: #fff;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(211, 214, 215, 0.969);
+}
+.orderClass-statusclass {
+  width: 40%;
+  float: right;
+  background: lightskyblue;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.orderClass-delivered {
+  border-left: 5px solid green;
+}
+.orderClass-cancelled {
+  border-left: 5px solid red;
+}
+.task.details {
+  background: #fff;
+  width: 30%;
+  border: 1px solid lightgray;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.select select,
+.select::after {
+  grid-area: select;
+}
+.select:not(.select--multiple)::after {
+  content: "";
+  justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+select:focus + .focus {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 2px solid var(--select-focus);
+  border-radius: inherit;
+}
+
+select[multiple] {
+  padding-right: 0;
+  /*
+   * Safari will not reveal an option
+   * unless the select height has room to 
+   * show all of it
+   * Firefox and Chrome allow showing 
+   * a partial option
+   */
+  height: 6rem;
+  /* 
+   * Experimental - styling of selected options
+   * in the multiselect
+   * Not supported crossbrowser
+   */
+}
+select[multiple] option {
+  white-space: normal;
+  outline-color: var(--select-focus);
+}
+
+.select--disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+  background-image: linear-gradient(to top, #ddd, #eee 33%);
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.select + label {
+  margin-top: 2rem;
+}
+
+/* body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-gap: 0.5rem;
+  font-family: "Baloo 2", sans-serif;
+  background-color: #e9f2fd;
+  padding: 1rem;
+} */
+
+html,
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

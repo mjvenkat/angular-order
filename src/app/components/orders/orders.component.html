@@ -1,0 +1,11 @@
+<app-areaheader></app-areaheader>
+<div *ngIf="!showCreateOrderForm && areOrdersThere()" class="homeContainerArea">
+    <app-order  *ngFor="let order of getOrders()" [order]="order" ></app-order>
+</div>
+<div *ngIf="!showCreateOrderForm && !areOrdersThere()" class="homeContainerArea">
+    <app-no-orders></app-no-orders>
+</div>
+<div *ngIf="showCreateOrderForm " class="homeContainerArea-form">
+    <app-add-order (onAddOrder)="createOrder($event)"></app-add-order>
+</div>
+

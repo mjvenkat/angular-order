@@ -1,0 +1,21 @@
+<form *ngIf="true" class="add-form" (ngSubmit)="onSubmit()" >
+    
+    
+    <label for="productCode">Select Product</label>
+    <div class="select">        
+        <select [(ngModel)]="productCode" name='productCode' (ngModelChange)="showPrice($event)" >
+            <option [ngValue]="undefined" selected >Select Language</option>
+            <option *ngFor="let p of products" [ngValue]="p"  >{{p.name}}</option>
+        </select>
+    </div>
+    <div class="form-control">
+        <label for="productCode">Product Price:{{orderPrice}}</label>        
+    </div>
+    <div class="form-control">
+        <label for="shippingAddress">Shipping Address</label>
+        <textarea type="shippingAddress" cols="40" rows=5 name="shippingAddress" [(ngModel)]="shippingAddress" id="shippingAddress" placeholder="Shipping Address"></textarea>
+    </div>
+
+    <input type="submit" value="Create Order" class="btn btn-block" > 
+
+</form>

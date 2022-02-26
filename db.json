@@ -1,0 +1,114 @@
+{
+  "Orders": [
+    {
+      "orderProduct": "Airpod Pro",
+      "orderPrice": "$250",
+      "productType": "gadget",
+      "orderStatus": "PENDING",
+      "productCode": 1,
+      "shippingAddress": "42 Rockrose Dr, East Greenbush, NY 12061",
+      "id": 1
+    },
+    {
+      "orderProduct": "Horry Potter",
+      "orderPrice": "$50",
+      "productType": "book",
+      "orderStatus": "PENDING",
+      "productCode": 2,
+      "shippingAddress": "sadadd",
+      "id": 2
+    },
+    {
+      "orderProduct": "ZZ Plant",
+      "orderPrice": "$150.99",
+      "productType": "plant",
+      "orderStatus": "PENDING",
+      "productCode": 3,
+      "shippingAddress": "asdasd",
+      "id": 3
+    },
+    {
+      "orderProduct": "Horry Potter",
+      "orderPrice": "$50",
+      "productType": "book",
+      "orderStatus": "PENDING",
+      "productCode": 2,
+      "shippingAddress": "west st",
+      "id": 4
+    },
+    {
+      "orderProduct": "Airpod Pro",
+      "orderPrice": "$250",
+      "productType": "gadget",
+      "orderStatus": "PENDING",
+      "productCode": 1,
+      "shippingAddress": "rest",
+      "id": 5
+    },
+    {
+      "orderProduct": "ZZ Plant",
+      "orderPrice": "$150.99",
+      "productType": "plant",
+      "orderStatus": "PENDING",
+      "productCode": 3,
+      "shippingAddress": "quest",
+      "id": 6
+    },
+    {
+      "orderProduct": "Horry Potter",
+      "orderPrice": "$50",
+      "productType": "book",
+      "orderStatus": "PENDING",
+      "productCode": 2,
+      "shippingAddress": "oest",
+      "id": 7
+    },
+    {
+      "orderProduct": "ZZ Plant",
+      "orderPrice": "$150.99",
+      "productType": "plant",
+      "orderStatus": "PENDING",
+      "productCode": 3,
+      "shippingAddress": "aest",
+      "id": 8
+    },
+    {
+      "orderProduct": "Horry Potter",
+      "orderPrice": "$50",
+      "productType": "book",
+      "orderStatus": "PENDING",
+      "productCode": 2,
+      "shippingAddress": "42 Rockrose Dr",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Airpod Pro",
+      "type": "gadget",
+      "price": "$250"
+    },
+    {
+      "id": 2,
+      "name": "Horry Potter",
+      "type": "book",
+      "price": "$50"
+    },
+    {
+      "id": 3,
+      "name": "ZZ Plant",
+      "type": "plant",
+      "price": "$150.99"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "mks",
+      "password": "password",
+      "firstName": "Meenakshi",
+      "lastName": "Sundaram"
+    }
+  ]
+}

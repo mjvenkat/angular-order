@@ -1,0 +1,12 @@
+<div [ngClass]="getOrderCSSClasses(order)" class="orderClass">
+    <div class="orderClass-details">
+        <h1>{{order.orderProduct}}</h1>        
+        <h2>{{order.orderPrice}}</h2>
+        <h3>{{order.productType}}</h3>
+        <h3>{{order.shippingAddress}}</h3>    
+    </div>
+    <div class="orderClass-statusclass">
+        <h3>{{order.orderStatus}}</h3>    
+    </div>
+</div>
+
